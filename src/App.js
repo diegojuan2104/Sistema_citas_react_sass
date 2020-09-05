@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fragment>
+        <div className="header">
+          <div className="header-content">
+            <img
+              alt="logo"
+              className="logo"
+              src={require("./img/cita-medica.png")}
+            ></img>
+            <h1>PROGRAMADOR DE CITAS</h1>
+          </div>
+        </div>
+        <div className>
+        </div>
+
+        <div className="banner-img"></div>
+      </Fragment>
     </div>
   );
 }

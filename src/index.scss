@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 // COLORS
 $color-primary: #62e7e9;
 $color-primary-light: #09e0e4;
@@ -15,94 +16,10 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
+
 body {
   margin: 0;
   font-family: sans-serif;
   background-color: $color-white;
 }
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: $color-white;
-}
 
-.header {
-  display: flex;
-  justify-content: center;
-}
-
-.header-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: absolute;
-  z-index: 1;
-  background-color: $color-white;
-  border: solid;
-  border-radius: 5px;
-  padding: 10px;
-  border-color: $color-white;
-
-  .logo {
-    height: 7rem;
-  }
-
-  h1 {
-    margin-top: 25px;
-    z-index: 1;
-    font-weight: 700;
-    font-size: 20px;
-  }
-}
-
-.banner{
-  background-image: url("./img/bannerdif.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  background-position: center center;
-  z-index: 5;
-  display: block;
-}
-
-
-//GRID
-@mixin clearfix {
-  &::after{
-      content: "";
-      display: table;
-      clear: both;
-  }
-}
-
-$grid-width: 114rem;
-$gutter-vertical: 16rem;
-$gutter-horizontal: 6rem;
-
-.row {
-  max-width: $grid-width; // Convention
-  margin: 0 auto;
-  z-index: 1;
-
-  &:not(:last-child) {
-    // not() all except the last child
-    margin-bottom: $gutter-vertical;
-  }
-
-  @include clearfix;
-
-  [class^="col-"] {
-    //Select all the columns that start with col-
-    background-color: orangered;
-    float: left;
-
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
-  }
-
-  .col-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal}) / 2);
-  }
-
-}

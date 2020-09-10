@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea{
+      width: 100%;
+  }
+
+  button{
+      width: 100%;
+  }
+}

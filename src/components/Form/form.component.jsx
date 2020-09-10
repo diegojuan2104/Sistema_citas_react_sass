@@ -1,44 +1,52 @@
 import React, { Fragment } from 'react';
+import "./form.styles.scss"
 
 const Form = () => {
     return (
         <Fragment>
-            <h2>Crear cita</h2>
-            <form>
-                <label htmlFor="mascota">Nombre mascota</label>
-                <input
-                    type="text"
-                    name="mascota"
-                    placeholder="Nombre mascota"
-                ></input>
+            <form className="form">
+                <h2>Crear cita</h2>
+                <div className="form-fields">
+                    <div className="input-box">
+                        <input
+                            type="text"
+                            name="mascota"
+                            placeholder="Nombre mascota"
+                        ></input>
+                    </div>
+                    <div className="input-box">
+                        <input
+                            type="text"
+                            name="propietario"
+                            placeholder="Nombre del dueño"
+                        ></input>
+                    </div>
 
-                <label htmlFor="propietario">Nombre propietario</label>
-                <input
-                    type="text"
-                    name="propietario"
-                    placeholder="Nombre del dueño"
-                ></input>
+                    <div className="input-box">
+                        <label htmlFor="fecha">Fecha y hora</label>
+                        <input
+                            type="date"
+                            name="fecha"
+                        ></input>
+                        <input
+                            type="time"
+                            name="hora"
+                        ></input>
+                    </div>
 
-                <label htmlFor="fecha">Fecha</label>
-                <input
-                    type="date"
-                    name="fecha"
-                ></input>
-                <label htmlFor="hora">Hora</label>
-                <input
-                    type="time"
-                    name="hora"
-                ></input>
+                    <div className="input-box">
+                        <textarea
+                            name="sintomas"
+                        ></textarea>
+                    </div>
 
-                <label htmlFor="sintomas">Sintomas</label>
-                <textarea
-                    name="sintomas"
-                ></textarea>
-
-                <button
-                    type="submit">
-                    Agregar cita
-                </button>
+                    <div className="input-box">
+                        <button
+                            type="submit">
+                            Agregar cita
+                        </button>
+                    </div>
+                </div>
             </form>
         </Fragment>
     );

@@ -6,20 +6,34 @@
   border-radius: 5px;
   margin: 20px;
 
-  h2 {
-    font-size: 30px;
-    text-align: center;
+
+  .alerta-error {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
   }
 
-  input {
-    width: 100%;
-  }
+  .input-box {
 
-  textarea{
+    font-size: 20px;
+
+    input {
       width: 100%;
-  }
+    }
 
-  button{
+    textarea {
       width: 100%;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
   }
 }

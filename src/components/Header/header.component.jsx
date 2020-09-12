@@ -4,7 +4,7 @@ import Citas from "../Citas/citas.component"
 
 import "./header.styles.scss"
 
-const Header = () => {
+const Header = ({crearCita}) => {
     return (
         <Fragment>
             <header className="header">
@@ -15,7 +15,7 @@ const Header = () => {
                     </div>
 
                     <div className="header-content">
-                        <Form />
+                        <Form crearCita={crearCita}/>
                         <Citas/>
                     </div>
                 </div>

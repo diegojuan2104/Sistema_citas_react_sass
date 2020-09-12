@@ -3,23 +3,10 @@
   padding: 0;
 }
 
-// COLORS
-$color-primary: #62e7e9;
-$color-primary-light: #09e0e4;
-$color-primary-dark: #30a3a5;
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
-
-//GRID
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
-
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: $color-white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #fff;
 }
 

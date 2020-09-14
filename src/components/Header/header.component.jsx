@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import Form from "../Form/form.component";
-import Citas from "../Citas/citas.component"
+import Citas_dropdown from "../Citas_dropdown/citas_dropdown.component"
 
 import "./header.styles.scss"
 
-const Header = ({crearCita}) => {
+const Header = ({crearCita, citas, eliminarCita}) => {
     return (
         <Fragment>
             <header className="header">
@@ -16,7 +16,7 @@ const Header = ({crearCita}) => {
 
                     <div className="header-content">
                         <Form crearCita={crearCita}/>
-                        <Citas/>
+                        <Citas_dropdown citas ={citas} eliminarCita={eliminarCita}/>
                     </div>
                 </div>
             </header>

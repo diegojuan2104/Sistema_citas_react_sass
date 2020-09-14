@@ -14,7 +14,6 @@
   .box {
     display: flex;
     flex-direction: column;
-    width: auto;
 
     .title-box {
       display: flex;
@@ -42,5 +41,18 @@
         display: flex;
         justify-content: center;
     }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+
+    .header-content{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+    
   }
 }

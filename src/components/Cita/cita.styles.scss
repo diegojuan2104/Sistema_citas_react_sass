@@ -1,0 +1,31 @@
+.cita{
+
+    border: solid 0.5px #000;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    p{
+        margin:0;
+        padding:0;
+    }
+
+    button{
+        border: solid 0.5px #000;
+        color: #ff044c;
+        font-size: 10px;
+        padding: 1px;
+        margin-top: 10px;
+
+        &:hover{
+            font-size: 12px;
+        }
+    }
+    
+}
+
+
